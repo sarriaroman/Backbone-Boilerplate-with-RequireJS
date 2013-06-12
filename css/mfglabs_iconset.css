@@ -1,0 +1,237 @@
+/*  MFG Labs iconset 1.0
+    
+    -------------------------------------------------------
+    
+    License
+    -------------------------------------------------------
+    • The MFG Labs iconset font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+    • MFG Labs inconset CSS files are licensed under the MIT License -
+      http://opensource.org/licenses/mit-license.html
+    • The MFG Labs iconset pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+    • Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+      MFG Labs inconset by MFG Labs
+
+    Contact
+    -------------------------------------------------------
+    Email: martin.charpentier@mfglabs.com
+    Twitter: http://twitter.com/mfg_labs
+    
+
+    */
+@font-face {
+    font-family: 'mfg_labs_iconsetregular';
+    src: url('font/mfglabsiconset-webfont.eot');
+    src: url('font/mfglabsiconset-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/mfglabsiconset-webfont.woff') format('woff'),
+         url('font/mfglabsiconset-webfont.ttf') format('truetype'),
+         url('font/mfglabsiconset-webfont.svg#mfg_labs_iconsetregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i, .icon {
+  font-family: 'mfg_labs_iconsetregular';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.icon2x { font-size: 2em; }
+.icon3x { font-size: 3em; }
+
+
+
+/* style exemples */
+.gradient {
+  color: #999;
+  text-shadow: 1px 1px 1px rgba(27, 27, 27, 0.19);
+  
+  background-image: -webkit-gradient(
+  linear,
+  left top, left bottom,
+  from(rgba( 182, 182, 182, 1)),
+  to(rgba(60, 60, 60, 1))
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.gradient:hover, .gradient .current {
+  color: #eee;
+	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.25);
+	
+  background-image: -webkit-gradient(
+  linear,
+  left top, left bottom,
+  from(rgba( 255, 255, 255, 1)),
+  to(rgba(187, 187, 187, 1))
+  );
+  
+}
+
+/*  MFG Labs iconset uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons.
+    We also use semantic unicode when they are available for the icon we provide. */
+
+.mfg-cloud:before                { content: "\2601"; }
+.mfg-at:before                   { content: "\0040"; }
+.mfg-plus:before                 { content: "\002B"; }
+
+.mfg-arrow_up:before             { content: "\2191"; }
+.mfg-arrow_down:before           { content: "\2193"; }
+.mfg-arrow_right:before          { content: "\2192"; }
+.mfg-arrow_left:before           { content: "\2190"; }
+.mfg-chevron_down:before         { content: "\f004"; }
+.mfg-chevron_up:before           { content: "\f005"; }
+.mfg-chevron_right:before        { content: "\f006"; }
+.mfg-chevron_left:before         { content: "\f007"; }
+.mfg-reorder:before              { content: "\f008"; }
+.mfg-list:before                 { content: "\f009"; }
+.mfg-reorder_square:before       { content: "\f00a"; }
+.mfg-reorder_square_line:before  { content: "\f00b"; }
+.mfg-coverflow:before            { content: "\f00c"; }
+.mfg-coverflow_line:before       { content: "\f00d"; }
+.mfg-pause:before                { content: "\f00e"; }
+.mfg-play:before                 { content: "\f00f"; }
+
+.mfg-step_forward:before         { content: "\f010"; }
+.mfg-step_backward:before        { content: "\f011"; }
+.mfg-fast_forward:before         { content: "\f012"; }
+.mfg-fast_backward:before        { content: "\f013"; }
+.mfg-cloud_upload:before         { content: "\f014"; }
+.mfg-cloud_download:before       { content: "\f015"; }
+.mfg-data_science:before         { content: "\f016"; }
+.mfg-data_science_black:before   { content: "\f017"; }
+.mfg-globe:before                { content: "\f018"; }
+.mfg-globe_black:before          { content: "\f019"; }
+.mfg-math_ico:before             { content: "\f01a"; }
+.mfg-math:before                 { content: "\f01b"; }
+.mfg-math_black:before           { content: "\f01c"; }
+.mfg-paperplane_ico:before       { content: "\f01d"; }
+.mfg-paperplane:before           { content: "\f01e"; }
+.mfg-paperplane_black:before     { content: "\f01f"; }
+
+/* \f020 doesn't work in Safari. all shifted one down */
+.mfg-color_balance:before        { content: "\f020"; }
+.mfg-star:before                 { content: "\2605"; }
+.mfg-star_half:before            { content: "\f022"; }
+.mfg-star_empty:before           { content: "\2606"; }
+.mfg-star_half_empty:before      { content: "\f024"; }
+.mfg-reload:before               { content: "\f025"; }
+
+.mfg-heart:before                { content: "\2665"; }
+.mfg-heart_broken:before         { content: "\f028"; }
+.mfg-hashtag:before              { content: "\f029"; }
+.mfg-reply:before                { content: "\f02a"; }
+.mfg-retweet:before              { content: "\f02b"; }
+.mfg-signin:before               { content: "\f02c"; }
+.mfg-signout:before              { content: "\f02d"; }
+.mfg-download:before             { content: "\f02e"; }
+.mfg-upload:before               { content: "\f02f"; }
+
+
+.mfg-placepin:before             { content: "\f031"; }
+.mfg-display_screen:before       { content: "\f032"; }
+.mfg-tablet:before               { content: "\f033"; }
+.mfg-smartphone:before           { content: "\f034"; }
+.mfg-connected_object:before     { content: "\f035"; }
+.mfg-lock:before                 { content: "\F512"; }
+.mfg-unlock:before               { content: "\F513"; }
+.mfg-camera:before               { content: "\F4F7"; }
+.mfg-isight:before               { content: "\f039"; }
+.mfg-video_camera:before         { content: "\f03a"; }
+.mfg-random:before               { content: "\f03b"; }
+.mfg-message:before              { content: "\F4AC"; }
+.mfg-discussion:before           { content: "\f03d"; }
+.mfg-calendar:before             { content: "\F4C5"; }
+.mfg-ringbell:before             { content: "\f03f"; }
+
+.mfg-movie:before                { content: "\f040"; }
+.mfg-mail:before                 { content: "\2709"; }
+.mfg-pen:before                  { content: "\270F"; }
+.mfg-settings:before             { content: "\9881"; }
+.mfg-measure:before              { content: "\f044"; }
+.mfg-vector:before               { content: "\f045"; }
+.mfg-vector_pen:before           { content: "\2712"; }
+.mfg-mute_on:before              { content: "\f047"; }
+.mfg-mute_off:before             { content: "\f048"; }
+.mfg-home:before                 { content: "\2302"; }
+.mfg-sheet:before                { content: "\f04a"; }
+.mfg-arrow_big_right:before      { content: "\21C9"; }
+.mfg-arrow_big_left:before       { content: "\21C7"; }
+.mfg-arrow_big_down:before       { content: "\21CA"; }
+.mfg-arrow_big_up:before         { content: "\21C8"; }
+.mfg-dribbble_circle:before      { content: "\f04f"; }
+
+.mfg-dribbble:before             { content: "\f050"; }
+.mfg-facebook_circle:before      { content: "\f051"; }
+.mfg-facebook:before             { content: "\f052"; }
+.mfg-git_circle_alt:before       { content: "\f053"; }
+.mfg-git_circle:before           { content: "\f054"; }
+.mfg-git:before                  { content: "\f055"; }
+.mfg-octopus:before              { content: "\f056"; }
+.mfg-twitter_circle:before       { content: "\f057"; }
+.mfg-twitter:before              { content: "\f058"; }
+.mfg-google_plus_circle:before   { content: "\f059"; }
+.mfg-google_plus:before          { content: "\f05a"; }
+.mfg-linked_in_circle:before     { content: "\f05b"; }
+.mfg-linked_in:before            { content: "\f05c"; }
+.mfg-instagram:before            { content: "\f05d"; }
+.mfg-instagram_circle:before     { content: "\f05e"; }
+.mfg-mfg_icon:before             { content: "\f05f"; }
+
+.mfg-mfg_icon_circle:before      { content: "\f060"; }
+.mfg-user:before                 { content: "\f061"; }
+.mfg-user_male:before            { content: "\f062"; }
+.mfg-user_female:before          { content: "\f063"; }
+.mfg-users:before                { content: "\f064"; }
+
+.mfg-file_open:before            { content: "\F4C2"; }
+.mfg-file_close:before           { content: "\f067"; }
+.mfg-file_alt:before             { content: "\f068"; }
+.mfg-file_close_alt:before       { content: "\f069"; }
+.mfg-attachment:before           { content: "\f06a"; }
+.mfg-check:before                { content: "\2713"; }
+.mfg-cross_mark:before           { content: "\274C"; }
+.mfg-cancel_circle:before        { content: "\f06d"; }
+.mfg-check_circle:before         { content: "\F06E"; }
+.mfg-magnifying:before           { content: "\F50D"; }
+
+.mfg-inbox:before                { content: "\f070"; }
+.mfg-clock:before                { content: "\23F2"; }
+.mfg-stopwatch:before            { content: "\23F1"; }
+.mfg-hourglass:before            { content: "\231B"; }
+.mfg-trophy:before               { content: "\f074"; }
+.mfg-unlock_alt:before           { content: "\F075"; }
+.mfg-lock_alt:before             { content: "\F510"; }
+.mfg-arrow_doubled_right:before  { content: "\21D2"; }
+.mfg-arrow_doubled_left:before   { content: "\21D0"; }
+.mfg-arrow_doubled_down:before   { content: "\21D3"; }
+.mfg-arrow_doubled_up:before     { content: "\21D1"; }
+.mfg-link:before                 { content: "\f07B"; }
+.mfg-warning:before              { content: "\2757"; }
+.mfg-warning_alt:before          { content: "\2755"; }
+.mfg-magnifying_plus:before      { content: "\f07E"; }
+.mfg-magnifying_minus:before     { content: "\f07F"; }
+
+.mfg-white_question:before       { content: "\2754"; }
+.mfg-black_question:before       { content: "\2753"; }
+.mfg-stop:before                 { content: "\f080"; }
+.mfg-share:before                { content: "\f081"; }
+.mfg-eye:before                  { content: "\f082"; }
+.mfg-trash_can:before            { content: "\f083"; }
+.mfg-hard_drive:before           { content: "\f084"; }
+.mfg-information_black:before    { content: "\f085"; }
+.mfg-information_white:before    { content: "\f086"; }
+.mfg-printer:before              { content: "\f087"; }
+.mfg-letter:before               { content: "\f088"; }
+.mfg-soundcloud:before           { content: "\f089"; }
+.mfg-soundcloud_circle:before    { content: "\f08A"; }
+.mfg-anchor:before               { content: "\2693"; }

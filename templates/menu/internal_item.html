@@ -1,0 +1,6 @@
+<div class="menu-item" id="menu<%= data.id %>"> 
+	<i class="mfg-reorder_square icon2x"></i>
+	<br/>
+	<span><%= data.name %></span>
+	<a href="javascript:window.router.navigate('items/remove/<%= data.id %>', { trigger: true, replace: true});" class="remove-item">eliminar</a>
+</div>
